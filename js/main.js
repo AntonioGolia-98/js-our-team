@@ -36,3 +36,19 @@ const teamMembers = [
     img: "img/female3.png"
   }
 ];
+
+const generateNewCard = ( singleMember ) => {
+    const { name, role, email, img} = singleMember;
+    const newElement = document.createElement("div");
+    newElement.classList.add("team-members");
+    newElement.innerHTML = `
+        <div class="card-image">
+        <img src="./img/${Img}" alt=" photo of ${name}"> 
+    </div>
+    <div class="card-text">
+        <h2>${name}</h2>
+        <p>${role}</p>
+        <p>${email}</p>
+    </div>`;
+    return newElement;
+}
