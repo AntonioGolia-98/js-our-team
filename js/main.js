@@ -43,7 +43,7 @@ const generateNewCard = ( singleMember ) => {
     newElement.classList.add("team-members");
     newElement.innerHTML = `
       <section class="box" >
-        <div class="card-image">
+        <div class="card-imag">
         <img src="${imag}" alt=" photo of ${name}"> 
     </div>
     <div class="card-text">
@@ -65,4 +65,4 @@ function renderTeamPage ( teamMembers, wrapperId ){
     }
 }
 
-renderTeamPage (teamMembers, "Team-container");
+renderTeamPage (teamMembers, "team-container");
