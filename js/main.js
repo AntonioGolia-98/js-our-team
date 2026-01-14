@@ -42,14 +42,17 @@ const generateNewCard = ( singleMember ) => {
     const newElement = document.createElement("div");
     newElement.classList.add("team-members");
     newElement.innerHTML = `
+      <section class="box" >
         <div class="card-image">
         <img src="${imag}" alt=" photo of ${name}"> 
     </div>
     <div class="card-text">
         <h2>${name}</h2>
         <p>${role}</p>
-        <p>${email}</p>
-    </div>`;
+        <a>${email}</a>
+    </div>
+    </section>`;
+  
     return newElement;
 }
 
